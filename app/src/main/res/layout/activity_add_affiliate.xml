@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RadioGroup
+        android:id="@+id/btnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/offerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:onClick="clickedRadioButton"
+            android:text="Offer" />
+        <RadioButton
+            android:id="@+id/bannerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:onClick="clickedRadioButton"
+            android:padding="10dp"
+            android:text="Banner"/>
+        <RadioButton
+            android:id="@+id/catBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="clickedRadioButton"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="Category"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/aff_get_cate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:background="#daffffff"
+        android:hint="Category"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"/>
+
+
+    <LinearLayout
+        android:id="@+id/affLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/aff_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="#daffffff"
+            android:hint="Title"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/aff_category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#daffffff"
+            android:padding="5dp"
+            android:hint="Category"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/aff_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#daffffff"
+            android:hint="Thumbnail Link"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/aff_url"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#daffffff"
+            android:hint="URL"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/aff_offer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:background="#daffffff"
+            android:hint="Offer Title"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_margin="20dp"
+        android:background="#03b903"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
